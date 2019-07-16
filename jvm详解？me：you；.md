@@ -45,9 +45,9 @@ Applicatoin Class Loder: $CLASSPATH
 
 此时.class文件完成了加载任务
 字节码文件执行交由JVM执行引擎来处理
+![执行引擎](./imgs/执行引擎.png)
 
 JVM执行引擎包括
-![执行引擎](./imgs/执行引擎.png)
 Interpreter: 解释器，解释器很擅长处理字节码文件，但是如果只用解释器java的编译将会相当缓慢，原因：同一个方法调用是解释器会重复进行解析
 JIT Compiler: JIT就是用来解决解释器的缓慢问题的，当JIT遇到新的字节码需要解释时需要通过解释器进行解释，将解释器解释好的内容更改为本地代码(native code)，当解析重复的方法是，直接调用本地代码
 Garbage Collector: 常说的GC，对堆内存进行回收，回收机制，回收时机，回收采用的算法下面将会描述。
