@@ -1,5 +1,5 @@
 ### JVM详解?me:you 2
-![RuntimeDataArea](.\imgs\RuntimeDataArea.png)
+![RuntimeDataArea](./imgs/RuntimeDataArea.png)
 
 RuntimeDataArea：包括方法区，堆区，栈区，程序计数器，本地方法栈
 各区详述：
