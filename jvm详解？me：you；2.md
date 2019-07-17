@@ -1,12 +1,12 @@
 ### JVM详解?me:you 2
-![Runtime Data Area](.\imgs\RuntimeDataArea.png)
+![RuntimeDataArea](.\imgs\RuntimeDataArea.png)
 
 RuntimeDataArea：包括方法区，堆区，栈区，程序计数器，本地方法栈
 各区详述：
 - 方法区：
 	
 > 方法区存放内容：由java加载器加载好的Class文件，静态的变量方法等都存到这个区域（注意final类型的变量不会存放到这个区域，每次new一个对象，final属性的变量和方法都会造一个新的出来）
-	
+
 - 堆区：用来存放对象的区域，此区域会出现OOM，区域大体分为2部分，新生代和老年代，新生代继续细分，具体算法下面将会描述。
 - 栈区：栈区主要由栈帧组成，栈帧再次细分，如下图所示
 
