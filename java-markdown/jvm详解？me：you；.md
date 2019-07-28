@@ -1,6 +1,6 @@
 ### JVM详解?me:you 1
 
-![JVM内存区](./imgs/JVM内存区.png)
+![JVM内存区](../imgs/JVM内存区.png)
 
 ### one：类加载器子系统的描述
 
@@ -20,7 +20,7 @@ Applicatoin Class Loder: 系统类加载器
 
 ### two : 可以干什么
 
-![存入方式](./imgs/存入方式.png)
+![存入方式](../imgs/存入方式.png)
 
 
 可以将一个.class文件加载初始化为一个Class，存入JVM的方法区
@@ -39,13 +39,13 @@ Applicatoin Class Loder: $CLASSPATH
 每个加载类都会加载加载空间中的classes文件夹下的.class文件
 
 ### four：双亲委派
-![双亲委派](./imgs/双亲委派.jpg)
+![双亲委派](../imgs/双亲委派.jpg)
 
 靠下的加载器在加载一个Class之前会想它的父加载器寻找这个Class，如果Class没有被父加载器加载过，则会继续往上找，然后从上到下尝试加载这个类，一般来说这个未出现的Class对象会通过加载的消息询问提出者来进行加载，如果上层已经加载了这个Class，下面的同样的对象将会无效，然后将Class对象存入方法区
 
 此时.class文件完成了加载任务
 字节码文件执行交由JVM执行引擎来处理
-![执行引擎](./imgs/执行引擎.png)
+![执行引擎](../imgs/执行引擎.png)
 
 JVM执行引擎包括
 Interpreter: 解释器，解释器很擅长处理字节码文件，但是如果只用解释器java的编译将会相当缓慢，原因：同一个方法调用是解释器会重复进行解析

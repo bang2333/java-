@@ -1,5 +1,5 @@
 ### JVM详解?me:you 2
-![RuntimeDataArea](./imgs/RuntimeDataArea.png)
+![RuntimeDataArea](../imgs/RuntimeDataArea.png)
 
 RuntimeDataArea：包括方法区，堆区，栈区，程序计数器，本地方法栈
 各区详述：
@@ -16,7 +16,7 @@ RuntimeDataArea：包括方法区，堆区，栈区，程序计数器，本地�
 
 - Stack 栈区：
 
-![栈内存图](./imgs/栈内存图.png)
+![栈内存图](../imgs/栈内存图.png)
 
 首先，栈内存是由栈帧组成的
 
@@ -30,7 +30,7 @@ RuntimeDataArea：包括方法区，堆区，栈区，程序计数器，本地�
 >
 > 操作环境上下文
 
-![堆内存图](./imgs/堆内存图.png)
+![堆内存图](../imgs/堆内存图.png)
 
 堆内存分为新生代，老年代，永久区（1.8后无永久区，被元空间替代）。
 
