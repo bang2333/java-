@@ -42,3 +42,11 @@ File file1 = new File("d:/1.txt");
 File file2 = new File("d:/2.sql");
 file1.renameTo(file2);
 ```
+
+获取file的属性：
+
+```java
+//file 的绝对路径
+
+```
+
