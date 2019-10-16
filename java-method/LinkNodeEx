@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+
+public class LinkNodeEx {
+    public static void main(String[] args) {
+        Node first = null;
+        Node tmp = null;
+        int[] num = {1,2,3,4,5};
+        for (int n : num) {
+            if (first == null){
+                tmp = first = new Node(n);
+            }else {
+                tmp.next = new Node(n);
+                tmp = tmp.next;
+            }
+        }
+        resver2(first);
+        System.out.println();
+
+    }
+    public static void resver2(Node first){
+        Node a = null,b,c;
+        b = first;
+        int i = 1;
+        while (b.next != null){
+            c = b.next;
+
+            if (a == null){
+                b.next = null;
+            }else{
+                b.next = a;
+            }
+            a = b;
+            b = c;
+        }
+        b.next = a;
+        first = b;
+        System.out.println();
+    }
+    public static void resver1(Node first){
+        Node reset = first;
+        ArrayList<Node> list = new ArrayList<>();
+        Node tmpset = reset;
+        while (tmpset != null){
+            list.add(tmpset);
+            if (tmpset.next == null){
+                first = tmpset;
+            }
+            tmpset = tmpset.next;
+        }
+        int n = 1;
+        for (Node node : list) {
+            if (n == 1) node.next = null;
+            if (list.size() == n)   break;
+            Node tmpd = list.get(n++);
+            tmpd.next = node;
+            System.out.println();
+        }
+    }
+}
+class Node{
+    private int data;
+    public Node next;
+    public Node(int data){
+        this.data = data;
+    }
+}
