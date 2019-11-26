@@ -6,7 +6,7 @@
 
 ![123](./imgs/垃圾代码1.png)
 
-代码有问题的吧，自己的答案：
+???
 
 ```java
 Stack<Integer> stack1 = new Stack<Integer>();
@@ -24,7 +24,7 @@ public int pop(){
 }
 ```
 
-为什么说垃圾代码呢？
+疑问：
 
 这个stack2不清空？第二次push时候怎么办，没看懂
 
@@ -54,4 +54,4 @@ int pop() {
 }
 ```
 
-啥时候有的top方法？？？？？
+这个top方法？
