@@ -24,34 +24,4 @@ public int pop(){
 }
 ```
 
-疑问：
 
-这个stack2不清空？第二次push时候怎么办，没看懂
-
-13行对stack2判空干嘛？这个是个书有点不信的ka
-
-最重要的是：
-
-![124](./imgs/程序员面试指南？.png)
-
-？？？？？？？
-
-牛客推介答案：
-
-```java
-int pop() {
-    int a;
-    if(stack2.empty()){
-        while(!stack1.empty()){
-            a=stack1.top();
-            stack2.push(a);
-            stack1.pop();
-        }
-    }
-    a=stack2.top();
-    stack2.pop();
-    return a;
-}
-```
-
-这个top方法？
